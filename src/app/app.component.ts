@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+
+  priceType: 'monthly' | 'annual' = 'monthly';
+
+  setValueToMonthly() {
+    this.priceType = "monthly";
+  }
+
+  setValueToAnnual() {
+    this.priceType = "annual";
+  }
+
 }

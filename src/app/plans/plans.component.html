@@ -1,0 +1,15 @@
+<ul class="container">
+    <li *ngFor="let plan of plans" class="plan-container">
+        <h1>{{ plan.name }}</h1>
+        <ul>
+            <li class="price">
+                {{priceType === "monthly" ? plan.price.monthly : plan.price.annual }}
+            </li>
+            <li class="description">{{plan.description}}</li>
+            <button mat-button class="btn">{{plan.buttonText}}</button>
+            <ul class="detail-list">
+                <li *ngFor="let detail of plan.details">{{detail}}</li>
+            </ul>
+        </ul>
+    </li>
+</ul>

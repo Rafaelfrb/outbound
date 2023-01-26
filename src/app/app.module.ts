@@ -1,10 +1,14 @@
-import { PlansService } from './plans.service';
+import { PlansService } from './plans/plans.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlansComponent } from './plans.component';
+import { PlansComponent } from './plans/plans.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +17,10 @@ import { PlansComponent } from './plans.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonToggleModule,
+    MatButtonModule
   ],
   providers: [
     PlansService

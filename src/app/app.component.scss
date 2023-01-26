@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.background-gradient {
+    background: rgb(53,34,195);
+    background: linear-gradient(196deg, rgba(53,34,195,1) 4%, rgba(202,45,253,1) 49%, rgba(192,44,249,1) 72%);
+    height: 50vh;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 0 40%);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
 .nav {
     position: sticky;
     top: 0;
@@ -27,7 +42,7 @@
 
     .navbar-buttons {
         display: flex;
-        width: 12%;
+        width: 18%;
         justify-content: space-around;
 
         button {
@@ -38,6 +53,27 @@
             background-color: transparent;
         }
     }
-
-    
   }
+
+  .toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    .nav {
+        flex-wrap: wrap; /* Allows the elements to wrap to the next line */
+        height: auto; /* Removes fixed height */
+        padding: 0 8px; /* Decreases padding for smaller screens */
+
+        ul {
+            display: none; 
+        }
+
+        .navbar-buttons {
+            width: 100%; 
+        }
+    }
+}

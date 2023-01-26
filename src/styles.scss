@@ -45,11 +45,6 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-body {
-    font-family: 'Lato', sans-serif;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-}
 
 .header {
     margin-top: 100px;
@@ -75,50 +70,6 @@ p {
 }
 
 
-plans {
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    
-        }
-
-    h1 {
-            font-weight: 700;
-            font-size: 30px;
-        }
-
-    .plan-container {
-        background-color: white;
-        margin: 20px;
-        border-radius: 10px;
-        padding: 40px;
-        font-size: large;
-    }
-
-    .price{
-        font-size: 30px;
-        font-weight: 700;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    button {
-        margin-top: 30px;
-        background-color: #012641;
-        color: white;
-        width: 250px;
-        height: 40px;
-        border-radius: 8px;
-        font-size: 15px;
-    }
-
-    .detail-list {
-        margin-top: 30px;
-        line-height: 40px;
-    }
-
-        
-}
-
+html, body { height: 100%; }
+body { margin: 0; }

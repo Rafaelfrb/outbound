@@ -1,26 +1,33 @@
 <body>
   <div class="background-gradient"></div>
-  <div class="nav">
-    Navbar
-    <ul>
-      <li><button mat-button>Platform</button></li>
-      <li><button mat-button>Pricing</button></li>
-      <li><button mat-button>Content Hub</button></li>
-      <li><button mat-button>Free tools</button></li>
-      <li><button mat-button>Sign in</button></li>
-    </ul>
-    <div class="navbar-buttons">
-      <button mat-button>Get Started ></button>
-      <button mat-button>View Demo ></button>
+    <div class="nav">
+      Navbar
+      <ul>
+        <li><button mat-button>Platform</button></li>
+        <li><button mat-button>Pricing</button></li>
+        <li><button mat-button>Content Hub</button></li>
+        <li><button mat-button>Free tools</button></li>
+        <li><button mat-button>Sign in</button></li>
+      </ul>
+      <div class="navbar-buttons">
+        <button mat-button style="background-color:rgb(187, 144, 190)">Get Started ></button>
+        <button mat-button>View Demo ></button>
+      </div>
     </div>
+    <h1 class="header">Start turning time into sales</h1>
+    <p>Join thousands of happy teams, boost your revenue and save <br> more time for what really matters.</p>
+  
+  <div class="toggle-container">
+    <mat-button-toggle-group name="periodicidade">
+      <mat-button-toggle checked="true" (click)="setValueToMonthly()">Monthly</mat-button-toggle>
+      <mat-button-toggle (click)="setValueToAnnual()">Annual</mat-button-toggle>
+    </mat-button-toggle-group>
   </div>
-  <h1 class="header">Start turning time into sales</h1>
-  <p>Join thousands of happy teams, boost your revenue and save <br> more time for what really matters.</p>
-  <plans></plans>
+  <app-plans [priceType]="priceType"></app-plans>
 
 
 <router-outlet></router-outlet>
 
-
-</body>
+<script type="module" src="./main.js"></script>
  
+</body>
